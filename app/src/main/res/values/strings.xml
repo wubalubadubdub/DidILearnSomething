@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">DidILearnSomething</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="time_picker_title">Pick a time, lad</string>
+
 </resources>

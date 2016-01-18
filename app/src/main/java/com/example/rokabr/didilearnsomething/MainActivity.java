@@ -15,7 +15,9 @@ public class MainActivity extends FragmentActivity {
      instance in the OnCreate method and add it to the FragmentManager
      */
 
+    private static final String DIALOG_TIME = "DialogTime";
     private Button mActivityButton;
+    private Button mFragmentButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +28,7 @@ public class MainActivity extends FragmentActivity {
         Fragment fragment = fm.findFragmentById(R.id.fragment_container);
         if (fragment == null) {
 
-            fragment = new SlagFragment();
+            fragment = new CalendarFragment();
             fm.beginTransaction().add(R.id.fragment_container, fragment).commit();
         }
 
@@ -36,6 +38,17 @@ public class MainActivity extends FragmentActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ButtonLaunchedActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        mFragmentButton = (Button) findViewById(R.id.launch_fragment_button);
+        mFragmentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentManager manager = getSupportFragmentManager();
+                TimePickerFragment dialog = TimePickerFragment.newInstance();
+                dialog.show(manager, DIALOG_TIME);
+
             }
         });
 

@@ -13,16 +13,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView
+        <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="There is a fragment below."
-            android:id="@+id/textView"
-            android:padding="16dp"
-            android:textSize="18sp"
-            android:layout_weight="1"
+            android:text="launch fragment"
+            android:id="@+id/launch_fragment_button"
             android:layout_margin="16dp"
-            android:gravity="center"/>
+            android:layout_weight="1"
+            android:padding="16dp"/>
 
         <Button
             android:layout_width="0dp"
@@ -33,6 +31,7 @@
             android:padding="16dp"
             android:layout_margin="16dp"
             />
+
     </LinearLayout>
 
     <FrameLayout

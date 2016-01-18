@@ -10,7 +10,7 @@ import android.widget.DatePicker;
 /**
  * Created by rokabr on 1/14/2016.
  */
-public class SlagFragment extends Fragment {
+public class CalendarFragment extends Fragment {
 
     private DatePicker mDatePicker;
 
@@ -18,7 +18,7 @@ public class SlagFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_slag, container, false);
+        View view = inflater.inflate(R.layout.fragment_calendar_picker, container, false);
         mDatePicker = (DatePicker) view.findViewById(R.id.slag_date_picker);
         return view;
 
