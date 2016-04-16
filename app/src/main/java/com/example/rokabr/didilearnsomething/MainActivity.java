@@ -10,8 +10,8 @@ import android.widget.Button;
 
 public class MainActivity extends FragmentActivity {
 
-    /* Since this launcher Activity does more than just host a fragment
-    (it also has a TextView), we set its layout and create a fragment
+    /* Since this launcher Activity does more than just host a fragment,
+      we set its layout and create a fragment
      instance in the OnCreate method and add it to the FragmentManager
      */
 
